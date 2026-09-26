@@ -1,0 +1,37 @@
+{
+  "name": "genpark-episodic-memory-consolidation-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Two-tier memory consolidation engine distilling ephemeral working memory into persistent episodic knowledge entities.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agent-memory",
+  "tags": [
+    "episodic-memory",
+    "memory-consolidation",
+    "long-term-agent",
+    "graphrag",
+    "continual-learning"
+  ],
+  "inputs": {
+    "session_id": {
+      "type": "string",
+      "default": "sess_user_9918"
+    }
+  },
+  "outputs": {
+    "consolidation_id": {
+      "type": "string"
+    },
+    "durable_facts_extracted_count": {
+      "type": "integer"
+    },
+    "memory_compression_ratio": {
+      "type": "string"
+    },
+    "episodic_store_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
